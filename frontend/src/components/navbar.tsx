@@ -1,22 +1,24 @@
 import React from "react"
 import Lottie from "react-lottie-player"
-
+import { RotateCw } from "lucide-react"
+import Button from "@/components/ui/Button"
 import animationData from '@/assets/lottie/ai.json'
 
-import Button from "@/components/ui/Button"
-import { Plus } from "lucide-react"
 
 const Navbar = () => {
   return (
     <React.Fragment>
-        <div className="border-r-2 px-2 flex flex-col items-center gap-3 w-20">
+        <div className="fixed top-1 left-0 flex items-center justify-between w-full px-4 gap-2">
+          <div className="flex items-center gap-2 hover:bg-blue-200/60 px-1 pr-3 py-1 rounded-full">
           <Lottie
             animationData={animationData}
             loop
             play
             style={{ width: '50px', height: '50px' }}
           />
-          <Button variant="primary" size="icon" icon={<Plus />} children/>
+          <p className="font-medium text-lg text-gray-700">Alena</p>
+          </div>
+          <Button variant="primary" size="icon" icon={<RotateCw />} children/>
         </div>
     </React.Fragment>
   )

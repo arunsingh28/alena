@@ -5,9 +5,9 @@ import { Outlet } from 'react-router-dom';
 const AppLayout = () => {
     return (
         <React.Fragment>
-            <div className="flex h-screen bg-background-primary">
+            <div className="bg-background-primary">
                 <Navbar />
-                <div className="sticky top-0 overflow-auto w-full h-screen">
+                <div className="mx-auto container">
                     <Outlet />
                 </div>
             </div>
