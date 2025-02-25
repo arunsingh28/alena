@@ -14,11 +14,11 @@ const Navbar = () => {
             animationData={animationData}
             loop
             play
-            style={{ width: '50px', height: '50px' }}
+            className="md:w-10 md:h-10 w-8 h-8"
           />
-          <p className="font-medium text-lg text-gray-700">Alena</p>
+          <p className="font-medium md:text-lg text-sm text-gray-700">Alena</p>
           </div>
-          <Button variant="primary" size="icon" icon={<RotateCw />} children/>
+          <Button variant="primary" size="icon" className="md:w-10 md:h-10 w-8 h-8" icon={<RotateCw className="md:w-5 md:h-5 w-4 h-4"/>} children={<p className="md:text-sm text-xs">Refresh</p>}/>
         </div>
     </React.Fragment>
   )

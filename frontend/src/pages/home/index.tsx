@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className="flex flex-col items-center justify-center relative max-w-screen-lg h-screen mx-auto">
             <div className="flex flex-col gap-4 px-4 md:px-0">
-                <h1 className="text-4xl font-bold text-clip bg-gradient-to-r from-blue-900 to-green-700 text-transparent bg-clip-text">
+                <h1 className="md:text-4xl text-2xl font-bold text-clip bg-gradient-to-r from-blue-900 to-green-700 text-transparent bg-clip-text">
                     Hi there, Arun <br /> What would you like to book today?
                 </h1>
                 <p className="text-gray-500 text-sm">
