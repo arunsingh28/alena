@@ -5,8 +5,6 @@ const server = jsonServer.create()
 const router = jsonServer.router(path.join(__dirname, 'data', 'db.json'))
 const middlewares = jsonServer.defaults()
 
-// initialize project structure with essential configuration files
-
 
 server.use(middlewares)
 server.use(router)
