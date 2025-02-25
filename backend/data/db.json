@@ -1,0 +1,7 @@
+{
+    "movies": [
+        { "id": 1, "title": "Inception", "availableSeats": 50 },
+        { "id": 2, "title": "Interstellar", "availableSeats": 30 }
+    ],
+    "events": [{ "id": 1, "name": "Music Festival", "availableSeats": 100 }]
+}

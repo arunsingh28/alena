@@ -1,0 +1,18 @@
+import jsonServer from 'json-server'
+import path from 'path'
+
+const server = jsonServer.create()
+const router = jsonServer.router(path.join(__dirname, 'data', 'db.json'))
+const middlewares = jsonServer.defaults()
+
+// initialize project structure with essential configuration files
+
+
+server.use(middlewares)
+server.use(router)
+
+
+const PORT = process.env.PORT || 3000
+server.listen(PORT, () => {
+    console.log(`JSON Server is running on port ${PORT}`)
+})
